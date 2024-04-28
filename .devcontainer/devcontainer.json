@@ -1,0 +1,19 @@
+{
+  "name": "Existing Docker Compose (Extend)",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "noble-cipher-bug-in-webcrypto-aes-gcm-integration-dev",
+  "workspaceFolder": "/noble-cipher-bug-in-webcrypto-aes-gcm-integration",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Angular.ng-template",
+        "ms-vscode.vscode-typescript-next",
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker",
+        "pshershov.blueberry-banana"
+      ]
+    }
+  }
+}

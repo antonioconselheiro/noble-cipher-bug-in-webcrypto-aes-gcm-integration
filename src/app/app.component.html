@@ -1,0 +1,33 @@
+<form [formGroup]="cipherForm" (submit)="onSubmitCipher()">
+  <fieldset>
+    <legend>Cipher generated with &#64;noble/ciphers aes/gcm</legend>
+    <div>
+      <label>Content</label>
+      <input formControlName="content" name="content" type="text" />
+    </div>
+
+    <div>
+      <label>Password</label>
+      <input formControlName="password" name="password" type="password" />
+    </div>
+
+    <button type="submit">Encrypt</button>
+  </fieldset>
+</form>
+
+<form [formGroup]="webkitForm" (submit)="onSubmitWebkit()">
+  <fieldset>
+    <legend>Cipher generated with &#64;noble/ciphers aes/gcm integrated with webcrypto</legend>
+    <div>
+      <label>Content</label>
+      <input formControlName="content" name="content" type="text" />
+    </div>
+
+    <div>
+      <label>Password</label>
+      <input formControlName="password" name="password" type="password" />
+    </div>
+
+    <button type="submit">Encrypt</button>
+  </fieldset>
+</form>

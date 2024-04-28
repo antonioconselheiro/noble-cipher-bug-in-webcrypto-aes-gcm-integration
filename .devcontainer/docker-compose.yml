@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  noble-cipher-bug-in-webcrypto-aes-gcm-integration-dev:
+    image: noble-cipher-bug-in-webcrypto-aes-gcm-integration-dev
+    container_name: noble-cipher-bug-in-webcrypto-aes-gcm-integration-dev
+    build:
+      context: ../.
+      dockerfile: ./.devcontainer/Dockerfile
+    working_dir: /noble-cipher-bug-in-webcrypto-aes-gcm-integration
+    ports:
+      - 4200:4200
+    volumes:
+      - ..:/noble-cipher-bug-in-webcrypto-aes-gcm-integration:cached
+      - /var/run/docker.sock:/var/run/docker.sock
+    tty: true

@@ -20,7 +20,7 @@
             "outputPath": "docs",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "baseHref": "noble-cipher-bug-in-webcrypto-aes-gcm-integration",
+            "baseHref": "/noble-cipher-bug-in-webcrypto-aes-gcm-integration/",
             "polyfills": [
               "zone.js"
             ],
